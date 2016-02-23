@@ -29,12 +29,34 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Puma as the app server
 gem 'puma'
 
+gem 'redis'
+gem 'redis-rails'
+
+gem 'slim-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :test do
+  gem 'capybara', require: false
+  gem 'poltergeist', require: false
+  gem "shoulda-matchers", require: false
+  gem 'webmock'
+  gem 'database_cleaner', require: false 
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'better_errors'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
 end
 
 group :development do
@@ -43,6 +65,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 group :production do
