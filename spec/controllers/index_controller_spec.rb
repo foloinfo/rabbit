@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe IndexController, type: :controller do
-  
+
   describe 'index' do
     it "assigns objects" do
       get :index
