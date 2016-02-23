@@ -36,6 +36,8 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
+gem 'newrelic_rpm'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -44,7 +46,7 @@ group :test do
   gem 'poltergeist', require: false
   gem "shoulda-matchers", require: false
   gem 'webmock'
-  gem 'database_cleaner', require: false 
+  gem 'database_cleaner', require: false
 end
 
 group :development, :test do
