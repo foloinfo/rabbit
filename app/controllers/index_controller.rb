@@ -16,7 +16,7 @@ class IndexController < ApplicationController
         <ul>
           <li>一つの纏まりのある文章が、何について書かれているかが明確に分かる（Title / Theme）</li>
           <li>少しの思い付きから書き始めることができる（Start with single Paragraph）</li>
-          <li>書きながら考えを深めることができる（Change Log / Side Notes）<li>
+          <li>書きながら考えを深めることができる（Change Log / Side Notes）</li>
           <li>主題となる対象を見失わない（Display Theme）（または分岐できる（Start Paragraph from Side Notes / Link））</li>
           <li>構造を簡単に記述できる（Markdown）</li>
           <li>記述を失わない</li>
